@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirect after delay</title>
+  </head>
+  <body>
+    <script>
+      setTimeout(function() {
+        window.location = window.location.hash.substr(1);
+      }, 2000); // delay in ms before redirect happens
+    </script>
+  </body>
+</html>
